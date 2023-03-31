@@ -5,9 +5,11 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev",
-    "postinstall": "prisma generate",
     "lint": "next lint",
-    "start": "next start"
+    "start": "next start",
+    "postinstall": "prisma generate",
+    "db:studio": "pnpm dlx prisma studio",
+    "db:push": "pnpm dlx prisma db push"
   },
   "dependencies": {
     "@prisma/client": "^4.11.0",
